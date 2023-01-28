@@ -48,31 +48,31 @@ body {
   justify-content: space-around;
   list-style: none;
 }
-.topnav ul li a {
+.topnav ul .navlist a {
   text-decoration: none;
   color: black;
   font-size: small;
   font-weight: bold;
 }
-.topnav ul li a:hover {
+.topnav ul .navlist a:hover {
   font-size: smaller;
   color: gray;
 }
 
 .image-grid {
-  padding: 5rem 10rem 5rem 10rem;
+  padding: 3rem 10rem 3rem 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
   row-gap: 2rem;
   justify-content: center;
   align-content: center;
 }
 .image-grid .image {
-  width: 20rem;
-  height: 20rem;
+  width: 23rem;
+  height: 23rem;
   position: relative;
 }
 .image-grid .image img {
@@ -129,4 +129,55 @@ body {
 }
 .footer .icons #icon2 {
   padding: 0 0.5rem 0 0.5rem;
+}
+
+.recipe {
+  padding: 3rem 10rem 0 10rem;
+  text-align: center;
+  width: 100%;
+}
+.recipe h1 {
+  margin-bottom: 1rem;
+}
+.recipe h3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 1rem;
+}
+
+.ingridients {
+  display: flex;
+  padding: 3rem 10rem 0 10rem;
+}
+.ingridients #recipeimg {
+  width: 50%;
+  flex-direction: column;
+}
+.ingridients .list {
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.instrucions {
+  padding: 3rem 10rem 3rem 10rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+  .container .topnav ul {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .container .topnav ul {
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=index.css.map */

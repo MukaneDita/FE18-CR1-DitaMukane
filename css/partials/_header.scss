@@ -40,14 +40,14 @@ ul {
         list-style: none;
 
 
-        li a {
+        .navlist a {
             text-decoration: none;
             color: black;
             font-size: small;
             font-weight: bold;
         }
 
-        li a:hover{
+        .navlist a:hover{
             font-size: smaller;
             color: gray;
         }
