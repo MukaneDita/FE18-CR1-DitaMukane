@@ -1,0 +1,37 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    @include paragraphfix;
+    padding: 1rem 5rem 1rem 5rem;
+    
+    .footnav {
+        display: flex;
+        justify-content: space-around;
+        .footnav1{
+            width: 25%;
+            border-right: 1px solid white;
+        }
+        #fnav4{
+            border: 0;
+        }
+ 
+    }
+    
+    a{
+        text-decoration: none;
+        color: white;
+
+    }
+    a:hover{
+        font-size: larger;
+        color: gray;
+    }
+    .icons{
+        padding: 1rem;
+        #icon2 {
+            padding:0 0.5rem 0 0.5rem;
+        }
+    }
+
+}

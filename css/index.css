@@ -1,1 +1,132 @@
-/*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.topline .logo {
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.topline .searchbar input {
+  border: none;
+  margin-right: 0;
+  text-align: right;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.topline .searchbar button {
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.topnav {
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  padding: 1rem;
+}
+.topnav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+.topnav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: small;
+  font-weight: bold;
+}
+.topnav ul li a:hover {
+  font-size: smaller;
+  color: gray;
+}
+
+.image-grid {
+  padding: 5rem 10rem 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 2rem;
+  justify-content: center;
+  align-content: center;
+}
+.image-grid .image {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+}
+.image-grid .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+.image-grid .image p {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.7rem;
+  color: white;
+  font-size: small;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-size: small;
+  text-align: center;
+  padding: 1rem 5rem 1rem 5rem;
+}
+.footer .footnav {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footnav .footnav1 {
+  width: 25%;
+  border-right: 1px solid white;
+}
+.footer .footnav #fnav4 {
+  border: 0;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  font-size: larger;
+  color: gray;
+}
+.footer .icons {
+  padding: 1rem;
+}
+.footer .icons #icon2 {
+  padding: 0 0.5rem 0 0.5rem;
+}/*# sourceMappingURL=index.css.map */
