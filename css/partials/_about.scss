@@ -1,0 +1,47 @@
+#container {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+}
+
+.title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    h1 {
+        margin-bottom: 1rem;
+        font-family: 'Great Vibes', cursive;
+        font-weight: bold;
+    }
+    h3 {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        width: 100%;
+        padding: 1rem;
+        line-height: 1.8;
+    }
+}
+
+.content {
+    width: 80%;
+    margin-left: 10%;
+    h4 {
+        border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+        margin-top: 2rem;
+        font-size: larger;
+    }
+}
+
+.intro {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    border: 3px solid rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    width: 80%;
+    margin-left: 10%;
+    span {
+        font-family: 'Great Vibes', cursive;
+        font-size: 2rem;
+    }
+}

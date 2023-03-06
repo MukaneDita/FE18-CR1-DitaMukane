@@ -1,41 +1,42 @@
-.image-grid{
+.image-grid {
     padding: 3rem 10rem 3rem 10rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 4rem;
-    row-gap:2rem;
+    row-gap: 2rem;
     justify-content: center;
     align-content: center;
-
- 
     .image {
         width: 23rem;
         height: 23rem;
         position: relative;
-
-     
-        img{
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             position: absolute;
         }
-    
         p {
-            
             width: 100%;
             height: fit-content;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 0.7rem;
             @include paragraphfix;
-            position:absolute;
+            position: absolute;
             bottom: 0;
-    
-    
         }
-    
     }
 }
-    
- 
+
+#arrow {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    i {
+        color: black;
+    }
+}

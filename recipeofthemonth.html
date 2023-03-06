@@ -1,106 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Blog</title>
+
+    <!-- css link-->
     <link rel="stylesheet" href="/css/index.css" />
+    <!-- Font family -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Happy+Monkey&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/25d35d8c20.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-<div class="container">
-<header>
-      <div class="topline">
-        <div class="logo"> <p></p> Food Blog</div>
-        <form class="searchbar">
-          <input type="text" placeholder="Recipes" name="recipes" id="search"/>
-          <button type="submit" id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/25d35d8c20.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- Logo and Searchbar -->
+        <div class="topline">
+            <div class="logo">
+                <a href="about.html">Food Blog</a>
+            </div>
+            <form class="searchbar">
+                <input type="text" placeholder="Recipes" name="recipes" id="search" />
+                <button type="submit" id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
         </div>
-        <div class="topnav">
-          <nav>
-            <ul>
-<li class="navlist"><a href="#">Pasta</a></li>
-            <li class="navlist"><a href="#">Taco</a></li>
-            <li class="navlist"><a href="#">Pizza</a></li>
-            <li class="navlist"><a href="#">Dessert</a></li>
-            <li class="navlist"><a href="#">Breakfast</a></li>
-            <li class="navlist"><a href="#">Lunch</a></li>
-            <li class="navlist"><a href="#">Dinner</a></li>
-            <li class="navlist"><a href="recipeofthemonth.html">Recipe of the month</a> 
-            </li>
-            </ul>
-          </nav>
+        <!-- Navigation bar -->
+        <div class="topnav" id="top">
+            <nav>
+                <ul>
+                    <li class="navlist"><a href="index.html">Home</a></li>
+                    <li class="navlist"><a href="#">Pasta</a></li>
+                    <li class="navlist"><a href="#">Taco</a></li>
+                    <li class="navlist"><a href="#">Pizza</a></li>
+                    <li class="navlist"><a href="#">Dessert</a></li>
+                    <li class="navlist"><a href="#">Breakfast</a></li>
+                    <li class="navlist"><a href="#">Lunch</a></li>
+                    <li class="navlist"><a href="#">Dinner</a></li>
+                    <li class="navlist"><a href="recipeofthemonth.html">Recipe of the month</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
- <div class="recipe">
-  <h1>Recipe of the Month</h1>
-  <h3>CREAMY CHICKEN AND CAULIFLOWER</h3>
- </div>
-  <div class="ingridients">
-    <img src="/images/creamyChicken2.jpg" alt="Image of Creamy Chicken" id="recipeimg">
-    <div class="list">
-<h4>Ingridients</h4>
-    <ul>
-      <li>5 cups cauliflower florets</li>
-      <li>2 tablespoons olive oil</li>
-      <li>Kosher salt and freshly ground black pepper, to taste</li>
-      <li>6 bone-in, skin-on chicken thighs</li>
-      <li>2 tablespoons unsalted butter</li>
-      <li>2 medium shallots, diced</li>
-      <li>3 cloves garlic, minced</li>
-      <li>2 teaspoons chopped fresh thyme leaves</li>
-      <li>2 tablespoons all-purpose flour</li>
-      <li>1 ¾ cups chicken broth</li>
-      <li>¼ cup dry white wine*</li>
-      <li>4 cups baby spinach</li>
-      <li>¼ cup freshly grated Parmesan</li>
-      <li>½ cup half and half</li>
-    </ul>
+    <div id="container">
+        <!-- main content -->
+        <div class="recipe">
+            <h1>Recipe of the Month</h1>
+            <h3>CREAMY CHICKEN AND CAULIFLOWER</h3>
+        </div>
+        <div class="ingridients">
+            <div class="image">
+                <img src="/images/creamyChicken2.jpg" alt="Image of Creamy Chicken" id="recipeimg">
+            </div>
+            <div class="list">
+                <h4>Ingridients</h4>
+                <ul>
+                    <li>5 cups cauliflower florets</li>
+                    <li>2 tablespoons olive oil</li>
+                    <li>Kosher salt and freshly ground black pepper, to taste</li>
+                    <li>6 bone-in, skin-on chicken thighs</li>
+                    <li>2 tablespoons unsalted butter</li>
+                    <li>2 medium shallots, diced</li>
+                    <li>3 cloves garlic, minced</li>
+                    <li>2 teaspoons chopped fresh thyme leaves</li>
+                    <li>2 tablespoons all-purpose flour</li>
+                    <li>1 ¾ cups chicken broth</li>
+                    <li>¼ cup dry white wine*</li>
+                    <li>4 cups baby spinach</li>
+                    <li>¼ cup freshly grated Parmesan</li>
+                    <li>½ cup half and half</li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="instructions">
+            <div class="instructions">
+                <h4>Instruction</h4>
+                <ol>
+                    <li>Preheat oven to 450 degrees F. Lightly oil a baking sheet or coat with nonstick spray.</li>
+                    <li>Place cauliflower in a single layer onto the prepared baking sheet. Add olive oil; season with salt and pepper, to taste. Gently toss to combine.</li>
+                    <li>Place into oven and bake for 20-25 minutes, or until golden brown.</li>
+                    <li>Season chicken thighs with 3/4 teaspoon salt and 1/2 teaspoon pepper.</li>
+                    <li>Melt butter in a Dutch oven over medium heat. Working in batches, add chicken, skin-side down, and sear both sides until golden brown, about 2-3 minutes per side; set aside. Drain excess fat, reserving 2 tablespoons in the Dutch oven.</li>
+                    <li>Add shallot, and cook, stirring occasionally, until tender, about 3-5 minutes. Stir in garlic and thyme until fragrant, about 1 minute.</li>
+                    <li>Whisk in flour until lightly browned, about 1 minute.</li>
+                    <li>Stir in chicken broth and wine, scraping any browned bits from the bottom of the Dutch oven. Return chicken to the skillet.</li>
+                    <li>Bring to a boil; reduce heat and simmer, covered, until chicken has completely cooked through, reaching an internal temperature of 175 degrees F, about 15-20 minutes. Remove chicken and keep warm.</li>
+                    <li>Stir in spinach, Parmesan and half and half until the spinach has wilted, about 3 minutes. Stir in cauliflower until heated through, about 1-2 minutes. Return chicken to the skillet.</li>
+                    <li>Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+
     </div>
-    
-  </div>
-  <div class="instructions">
-    <h4>Instruction</h4>
-    <ol>
-      <li>Preheat oven to 450 degrees F. Lightly oil a baking sheet or coat with nonstick spray.</li>
-      <li>Place cauliflower in a single layer onto the prepared baking sheet. Add olive oil; season with salt and pepper, to taste. Gently toss to combine.</li>
-      <li>Place into oven and bake for 20-25 minutes, or until golden brown.</li>
-      <li>Season chicken thighs with 3/4 teaspoon salt and 1/2 teaspoon pepper.</li>
-      <li>Melt butter in a Dutch oven over medium heat. Working in batches, add chicken, skin-side down, and sear both sides until golden brown, about 2-3 minutes per side; set aside. Drain excess fat, reserving 2 tablespoons in the Dutch oven.</li>
-      <li>Add shallot, and cook, stirring occasionally, until tender, about 3-5 minutes. Stir in garlic and thyme until fragrant, about 1 minute.</li>
-      <li>Whisk in flour until lightly browned, about 1 minute.</li>
-      <li>Stir in chicken broth and wine, scraping any browned bits from the bottom of the Dutch oven. Return chicken to the skillet.</li>
-      <li>Bring to a boil; reduce heat and simmer, covered, until chicken has completely cooked through, reaching an internal temperature of 175 degrees F, about 15-20 minutes. Remove chicken and keep warm.</li>
-      <li>Stir in spinach, Parmesan and half and half until the spinach has wilted, about 3 minutes. Stir in cauliflower until heated through, about 1-2 minutes. Return chicken to the skillet.</li>
-      <li>Serve immediately.</li>
-    </ol>
-  </div>
+    <!-- Back to top btn -->
+    <div id="arrow">
+        <a href="#top"><i class="fa-solid fa-circle-arrow-up" ></i></a>
+    </div>
 
     <footer>
-      <div class="footer">
-       <div class="footnav">
-        <a href="about.html" class="footnav1">About</a>
-        <a href="#" class="footnav1">Recipes</a>
-        <a href="#" class="footnav1">FAQ</a>
-        <a href="https://codefactory.wien/en/contact-en/" class="footnav1" id="fnav4">Contact us</a>
-      </div>
-      <div class="icons">
-        <a href="#" aria-label="mail"><i class="fa-solid fa-envelope-open-text"></i></a>
-        <a href="https://www.facebook.com/" aria-label="facebook" id="icon2"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.youtube.com/" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-      <div class="copyright">
-        <p>Copyright &#169 2023 Dita Mukane</p>
-      </div> 
-      </div> 
+        <!-- Footer navigation -->
+        <div class="footer">
+            <div class="footnav">
+                <a href="about.html" class="footnav1">About</a>
+                <a href="#" class="footnav1">Recipes</a>
+                <a href="#" class="footnav1">FAQ</a>
+                <a href="https://codefactory.wien/en/contact-en/" class="footnav1" id="fnav4">Contact us</a>
+            </div>
+            <!-- Icons -->
+            <div class="icons">
+                <a href="#" aria-label="mail"><i class="fa-solid fa-envelope-open-text"></i></a>
+                <a href="https://www.facebook.com/" aria-label="facebook" id="icon2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>Copyright &#169 2023 Dita Mukane</p>
+            </div>
+        </div>
     </footer>
-    </div>
-    
-  </body>
+
+
+
+</body>
+
 </html>

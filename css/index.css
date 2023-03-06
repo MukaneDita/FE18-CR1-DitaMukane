@@ -16,18 +16,24 @@ body {
 .topline {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.25rem;
 }
-.topline .logo {
+.topline .logo a {
   font-family: "Great Vibes", cursive;
   font-weight: bold;
   font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+.topline .logo a:hover {
+  font-size: 1.7rem;
+  color: gray;
 }
 .topline .searchbar input {
   border: none;
   margin-right: 0;
   text-align: right;
-  padding: 10px;
+  padding: 0.625rem;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -51,11 +57,11 @@ body {
 .topnav ul .navlist a {
   text-decoration: none;
   color: black;
-  font-size: small;
+  font-size: medium;
   font-weight: bold;
 }
 .topnav ul .navlist a:hover {
-  font-size: smaller;
+  font-size: large;
   color: gray;
 }
 
@@ -84,16 +90,27 @@ body {
 }
 .image-grid .image p {
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0.7rem;
   color: white;
-  font-size: small;
+  font-size: medium;
   text-align: center;
   position: absolute;
   bottom: 0;
+}
+
+#arrow {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+#arrow i {
+  color: black;
 }
 
 .footer {
@@ -101,7 +118,7 @@ body {
   flex-direction: column;
   background-color: black;
   color: white;
-  font-size: small;
+  font-size: medium;
   text-align: center;
   padding: 1rem 5rem 1rem 5rem;
 }
@@ -131,16 +148,25 @@ body {
   padding: 0 0.5rem 0 0.5rem;
 }
 
+#container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
 .recipe {
-  padding: 3rem 10rem 0 10rem;
+  margin-top: 2rem;
   text-align: center;
   width: 100%;
 }
 .recipe h1 {
   margin-bottom: 1rem;
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
 }
 .recipe h3 {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   width: 100%;
   padding: 1rem;
@@ -148,19 +174,84 @@ body {
 
 .ingridients {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 3rem 10rem 0 10rem;
+  margin-bottom: 2rem;
 }
-.ingridients #recipeimg {
+.ingridients .image {
   width: 50%;
   flex-direction: column;
 }
 .ingridients .list {
   flex-direction: column;
-  margin-right: 2rem;
 }
 
-.instrucions {
-  padding: 3rem 10rem 3rem 10rem;
+#instructions {
+  border: 3px solid rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+#instructions li {
+  line-height: 1.8;
+}
+
+.instructions {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+h4 {
+  margin-bottom: 1rem;
+}
+
+#container {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+}
+
+.title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.title h1 {
+  margin-bottom: 1rem;
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+}
+.title h3 {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  line-height: 1.8;
+}
+
+.content {
+  width: 80%;
+  margin-left: 10%;
+}
+.content h4 {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+  margin-top: 2rem;
+  font-size: larger;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  border: 3px solid rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  width: 80%;
+  margin-left: 10%;
+}
+.intro span {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -179,5 +270,11 @@ body {
   }
   .container .topnav ul {
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1317px) {
+  .ingridients {
+    flex-direction: column;
+    padding: 0;
   }
 }/*# sourceMappingURL=index.css.map */

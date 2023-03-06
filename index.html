@@ -1,118 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Blog</title>
+
+
+    <!-- css link-->
     <link rel="stylesheet" href="/css/index.css" />
+    <!-- Font family -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Happy+Monkey&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/25d35d8c20.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-<div class="container">
-<header>
-      <div class="topline">
-        <div class="logo"> <p></p> Food Blog</div>
-        <form class="searchbar">
-          <input type="text" placeholder="Recipes" name="recipes" id="search"/>
-          <button type="submit" id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/25d35d8c20.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Logo and Searchbar -->
+        <div class="topline">
+            <div class="logo">
+                <a href="about.html">Food Blog</a>
+            </div>
+            <form class="searchbar">
+                <input type="text" placeholder="Recipes" name="recipes" id="search" />
+                <button type="submit" id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
         </div>
-        <div class="topnav">
-          <nav>
-            <ul>
-            <li class="navlist"><a href="#">Pasta</a></li>
-            <li class="navlist"><a href="#">Taco</a></li>
-            <li class="navlist"><a href="#">Pizza</a></li>
-            <li class="navlist"><a href="#">Dessert</a></li>
-            <li class="navlist"><a href="#">Breakfast</a></li>
-            <li class="navlist"><a href="#">Lunch</a></li>
-            <li class="navlist"><a href="#">Dinner</a></li>
-            <li class="navlist"><a href="recipeofthemonth.html">Recipe of the month</a> 
-            </li>
-            </ul>
-          </nav>
+        <!-- Navigation bar -->
+        <div class="topnav" id="top">
+            <nav>
+                <ul>
+                    <li class="navlist"><a href="index.html">Home</a></li>
+                    <li class="navlist"><a href="#">Pasta</a></li>
+                    <li class="navlist"><a href="#">Taco</a></li>
+                    <li class="navlist"><a href="#">Pizza</a></li>
+                    <li class="navlist"><a href="#">Dessert</a></li>
+                    <li class="navlist"><a href="#">Breakfast</a></li>
+                    <li class="navlist"><a href="#">Lunch</a></li>
+                    <li class="navlist"><a href="#">Dinner</a></li>
+                    <li class="navlist"><a href="recipeofthemonth.html">Recipe of the month</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <div class="image-grid">
-      <div class="image" id="i1">
-        <img src="/images/EggsSalad.jpg" alt="">
-        <p>
-          Easy <br /><br>
-          Egg Salad
-        </p>
-      </div>
-      <div class="image" id="i2">
-        <img src="/images/Cheesburger.jpg" alt="">
-        <p>
-          Dinner <br /><br>
-          Cheesburger
-        </p>
-      </div>
-      <div class="image" id="i3">
-        <img src="/images/BasilPizza.jpg" alt="">
-        <p>Pizza <br /><br> Basil Pizza</p>
-      </div>
-      <div class="image" id="i4">
-        <img src="/images/Pancakes.jpg" alt="">
-        <p>Dessert <br /><br> Pancakes</p>
-      </div>
-      <div class="image" id="i5">
-        <img src="/images/ZucchiniPasta.jpg" alt="">
-        <p>Pasta <br /><br> Zucchini Pasta</p>
-      </div>
-      <div class="image" id="i6">
-        <img src="/images/HerringAndPotatoes.jpg" alt="">
-        <p>
-          Lunch <br /><br>
-          Herring with Potatoes
-        </p>
-      </div>
-      <div class="image" id="i7">
-        <img src="/images/FruitsCereal.jpg" alt="">
-        <p>
-          Breakfast <br /><br>
-          Fruits Cereal
-        </p>
-      </div>
-      <div class="image" id="i8">
-        <img src="/images/RedVelvetCake.jpg" alt="">
-        <p>
-          Dessert <br /><br>
-          Red Velvet Cake
-        </p>
-      </div>
-      <div class="image" id="i9">
-        <img src="/images/BeetrootTacos.jpg" alt="">
-        <p>
-          Tacos <br /><br>
-          Beetroot Tacos
-        </p>
-      </div>
+    <div id="container">
+        <!-- Image grid, recipes -->
+        <div class="image-grid">
+            <div class="image" id="i1">
+                <img src="/images/EggsSalad.jpg" alt="">
+                <p>
+                    Easy <br /><br> Egg Salad
+                </p>
+            </div>
+            <div class="image" id="i2">
+                <img src="/images/Cheesburger.jpg" alt="">
+                <p>
+                    Dinner <br /><br> Cheesburger
+                </p>
+            </div>
+            <div class="image" id="i3">
+                <img src="/images/BasilPizza.jpg" alt="">
+                <p>Pizza <br /><br> Basil Pizza</p>
+            </div>
+            <div class="image" id="i4">
+                <img src="/images/Pancakes.jpg" alt="">
+                <p>Dessert <br /><br> Pancakes</p>
+            </div>
+            <div class="image" id="i5">
+                <img src="/images/ZucchiniPasta.jpg" alt="">
+                <p>Pasta <br /><br> Zucchini Pasta</p>
+            </div>
+            <div class="image" id="i6">
+                <img src="/images/HerringAndPotatoes.jpg" alt="">
+                <p>
+                    Lunch <br /><br> Herring with Potatoes
+                </p>
+            </div>
+            <div class="image" id="i7">
+                <img src="/images/FruitsCereal.jpg" alt="">
+                <p>
+                    Breakfast <br /><br> Fruits Cereal
+                </p>
+            </div>
+            <div class="image" id="i8">
+                <img src="/images/RedVelvetCake.jpg" alt="">
+                <p>
+                    Dessert <br /><br> Red Velvet Cake
+                </p>
+            </div>
+            <div class="image" id="i9">
+                <img src="/images/BeetrootTacos.jpg" alt="">
+                <p>
+                    Tacos <br /><br> Beetroot Tacos
+                </p>
+            </div>
+        </div>
     </div>
+    <!-- Back to top btn -->
+    <div id="arrow">
+        <a href="#top"><i class="fa-solid fa-circle-arrow-up" ></i></a>
+    </div>
+
     <footer>
-      <div class="footer">
-       <div class="footnav">
-        <a href="about.html" class="footnav1">About</a>
-        <a href="#" class="footnav1">Recipes</a>
-        <a href="#" class="footnav1">FAQ</a>
-        <a href="https://codefactory.wien/en/contact-en/" class="footnav1" id="fnav4">Contact us</a>
-      </div>
-      <div class="icons">
-        <a href="#" aria-label="mail"><i class="fa-solid fa-envelope-open-text"></i></a>
-        <a href="https://www.facebook.com/" aria-label="facebook" id="icon2"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.youtube.com/" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-      <div class="copyright">
-        <p>Copyright &#169 2023 Dita Mukane</p>
-      </div> 
-      </div> 
+        <!-- Footer navigation -->
+        <div class="footer">
+            <div class="footnav">
+                <a href="about.html" class="footnav1">About</a>
+                <a href="#" class="footnav1">Recipes</a>
+                <a href="#" class="footnav1">FAQ</a>
+                <a href="https://codefactory.wien/en/contact-en/" class="footnav1" id="fnav4">Contact us</a>
+            </div>
+            <!-- Icons -->
+            <div class="icons">
+                <a href="#" aria-label="mail"><i class="fa-solid fa-envelope-open-text"></i></a>
+                <a href="https://www.facebook.com/" aria-label="facebook" id="icon2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>Copyright &#169 2023 Dita Mukane</p>
+            </div>
+        </div>
     </footer>
-    </div>
-    
-  </body>
+
+
+</body>
+
 </html>
