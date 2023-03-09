@@ -117,7 +117,7 @@ body {
   border: 0;
   border-radius: 0.25em;
   background: initial;
-  background-color: #31492f;
+  background-color: #31492f !important;
   color: #fff;
   font-size: 1em;
 }
